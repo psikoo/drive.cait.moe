@@ -1,0 +1,81 @@
+@import './reset.css';
+
+@font-face {
+  font-family: atkinson;
+  font-display: swap;
+  src: url(../fonts/atkinson.ttf);
+}
+
+:root {
+  --text-color: #EBEBEB;
+  --border-color: #AD9BBD;
+  --black-color: #000000;
+  --dark-color: #050505;
+  --mid-color: #141220;
+  --light-color: #221F3B; 
+  --accent-color: #6F4A8E;
+}
+
+* {
+  scrollbar-width: thin;
+}
+
+html {
+  background-color: var(--black-color);
+  font-family:atkinson,sans-serif;
+}
+
+#app {
+  background-color: var(--black-color);
+  color: var(--text-color);
+  font-weight: normal;
+}
+
+h1 { font-size: 2em; font-weight: bold; }
+h2 { font-size: 1.5em; }
+
+a {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+button {
+  padding: 1em;
+  border-radius: 1em;
+  color: var(--text-color);
+  background-color: var(--accent-color);
+  border: none;
+  outline: none;
+  cursor: pointer;
+} button:hover {
+  filter: brightness(1.2);
+}
+
+input {
+  padding: 1em;
+  border-radius: 1em;
+  color: var(--text-color);
+  background-color: var(--dark-color);
+  border: none;
+  outline: none;
+} input:hover {
+  filter: brightness(1.2);
+}
+
+select {
+  padding: 1em;
+  border-radius: 1em;
+  color: var(--text-color);
+  background-color: var(--dark-color);
+  border: none;
+  outline: none;
+} select:hover {
+  filter: brightness(1.2);
+}
+
+path {
+  stroke: var(--text-color);
+  fill: none;
+}
+
+.hidden { display: none !important; }
